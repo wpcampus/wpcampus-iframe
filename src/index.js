@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import iFrameResize from "iframe-resizer";
+import "./index.css"
 
 const Iframe = ({ id, src, origins, resize, resizeLog }) => {
 
