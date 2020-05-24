@@ -29,7 +29,7 @@ var Iframe = function Iframe(_ref) {
   var resizeOptions = {
     log: resizeLog,
     warningTimeout: 10000,
-    resizedCallback: function resizedCallback(e) {
+    onResized: function onResized(e) {
       e.iframe.parentNode.classList.remove("wpc-iframe-wrapper--loading");
     }
   };

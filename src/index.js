@@ -9,7 +9,7 @@ const Iframe = ({ id, src, origins, resize, resizeLog }) => {
 	const resizeOptions = {
 		log: resizeLog,
 		warningTimeout: 10000,
-		resizedCallback: function (e) {
+		onResized: function (e) {
 			e.iframe.parentNode.classList.remove("wpc-iframe-wrapper--loading");
 		}
 	};
