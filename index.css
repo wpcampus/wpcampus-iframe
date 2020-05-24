@@ -1,0 +1,38 @@
+.wpc-iframe-wrapper {
+	min-height: 200px;
+	position: relative;
+}
+
+.wpc-iframe-wrapper__loading {
+	display: flex;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: auto;
+	min-height: 200px;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #222;
+	padding: 2rem;
+	text-align: center;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.wpc-iframe-wrapper__loading p {
+	margin: 0;
+}
+
+.wpc-iframe-wrapper .wpc-iframe--resize {
+	opacity: 1;
+	transition: all 1s;
+}
+
+.wpc-iframe-wrapper--loading .wpc-iframe-wrapper__loading {
+	opacity: 0.4;
+}
+
+.wpc-iframe-wrapper--loading .wpc-iframe--resize {
+	opacity: 0;
+}

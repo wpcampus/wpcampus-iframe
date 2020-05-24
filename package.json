@@ -1,0 +1,43 @@
+{
+	"name": "@wpcampus/wpcampus-iframe",
+	"version": "0.0.0",
+	"description": "The iframe React component used by the WPCampus organization.",
+	"main": "index.js",
+	"scripts": {
+		"build": "./node_modules/.bin/babel ./src --out-file index.js",
+		"css": "stylelint *.css --fix"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/wpcampus/wpcampus-iframe.git"
+	},
+	"keywords": [
+		"wpcampus",
+		"iframe"
+	],
+	"author": "WPCampus",
+	"contributors": [
+		"Rachel Cherry"
+	],
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://github.com/wpcampus/wpcampus-iframe/issues"
+	},
+	"homepage": "https://github.com/wpcampus/wpcampus-iframe#readme",
+	"devDependencies": {
+		"@babel/cli": "^7.8.4",
+		"@babel/core": "^7.9.6",
+		"@babel/preset-env": "^7.9.6",
+		"@babel/preset-react": "^7.9.4",
+		"stylelint": "^13.3.0",
+		"stylelint-config-standard": "^20.0.0"
+	},
+	"peerDependencies": {
+		"react": "^16.11.0",
+    	"react-dom": "^16.11.0"
+	},
+	"dependencies": {
+		"iframe-resizer": "^4.2.10",
+		"prop-types": "^15.7.2"
+	}
+}
