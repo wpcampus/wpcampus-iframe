@@ -22,6 +22,10 @@ const Iframe = ({ id, src, origins, resize, resizeLog }) => {
 		resize && iFrameResize.iframeResizer(resizeOptions, "#" + iframeRef.current.id);
 	}, []);
 
+	const wrapperAttr = {
+		className: "wpc-iframe-wrapper"
+	};
+
 	const iframeAttr = {
 		ref: iframeRef,
 		id: id,
@@ -30,13 +34,14 @@ const Iframe = ({ id, src, origins, resize, resizeLog }) => {
 	};
 
 	if (resize) {
+		wrapperAttr.className += " wpc-iframe-wrapper--loading";
 		iframeAttr.className += " wpc-iframe--resize";
 	}
 
-	return <div className="wpc-iframe-wrapper wpc-iframe-wrapper--loading">
-		<div className="wpc-iframe-wrapper__loading">
+	return <div {...wrapperAttr}>
+		{resize && <div className="wpc-iframe-wrapper__loading">
 			<p>The form is loading.</p>
-		</div>
+		</div>}
 		<iframe {...iframeAttr} />
 	</div>;
 };

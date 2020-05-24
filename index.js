@@ -41,6 +41,9 @@ var Iframe = function Iframe(_ref) {
   (0, _react.useEffect)(function () {
     resize && _iframeResizer["default"].iframeResizer(resizeOptions, "#" + iframeRef.current.id);
   }, []);
+  var wrapperAttr = {
+    className: "wpc-iframe-wrapper"
+  };
   var iframeAttr = {
     ref: iframeRef,
     id: id,
@@ -49,12 +52,11 @@ var Iframe = function Iframe(_ref) {
   };
 
   if (resize) {
+    wrapperAttr.className += " wpc-iframe-wrapper--loading";
     iframeAttr.className += " wpc-iframe--resize";
   }
 
-  return /*#__PURE__*/_react["default"].createElement("div", {
-    className: "wpc-iframe-wrapper wpc-iframe-wrapper--loading"
-  }, /*#__PURE__*/_react["default"].createElement("div", {
+  return /*#__PURE__*/_react["default"].createElement("div", wrapperAttr, resize && /*#__PURE__*/_react["default"].createElement("div", {
     className: "wpc-iframe-wrapper__loading"
   }, /*#__PURE__*/_react["default"].createElement("p", null, "The form is loading.")), /*#__PURE__*/_react["default"].createElement("iframe", iframeAttr));
 };
