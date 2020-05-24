@@ -24,6 +24,11 @@
 	margin: 0;
 }
 
+.wpc-iframe-wrapper .wpc-iframe {
+	display: block;
+	width: 100%;
+}
+
 .wpc-iframe-wrapper .wpc-iframe--resize {
 	opacity: 1;
 	transition: all 1s;
