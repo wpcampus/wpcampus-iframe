@@ -23,6 +23,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 var Iframe = function Iframe(_ref) {
   var id = _ref.id,
+      title = _ref.title,
       src = _ref.src,
       origins = _ref.origins,
       resize = _ref.resize,
@@ -49,6 +50,7 @@ var Iframe = function Iframe(_ref) {
   var iframeAttr = {
     ref: iframeRef,
     id: id,
+    title: title,
     src: src,
     className: "wpc-iframe"
   };
@@ -71,6 +73,7 @@ Iframe.defaultProps = {
 };
 Iframe.propTypes = {
   id: _propTypes["default"].string,
+  title: _propTypes["default"].string.isRequired,
   src: _propTypes["default"].string.isRequired,
   resize: _propTypes["default"].bool,
   origins: _propTypes["default"].array,

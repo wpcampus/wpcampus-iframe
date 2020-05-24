@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import iFrameResize from "iframe-resizer";
 import "./index.css"
 
-const Iframe = ({ id, src, origins, resize, resizeLog }) => {
+const Iframe = ({ id, title, src, origins, resize, resizeLog }) => {
 
 	const iframeRef = useRef();
 
@@ -30,6 +30,7 @@ const Iframe = ({ id, src, origins, resize, resizeLog }) => {
 	const iframeAttr = {
 		ref: iframeRef,
 		id: id,
+		title: title,
 		src: src,
 		className: "wpc-iframe"
 	};
@@ -56,6 +57,7 @@ Iframe.defaultProps = {
 
 Iframe.propTypes = {
 	id: PropTypes.string,
+	title: PropTypes.string.isRequired,
 	src: PropTypes.string.isRequired,
 	resize: PropTypes.bool,
 	origins: PropTypes.array,
