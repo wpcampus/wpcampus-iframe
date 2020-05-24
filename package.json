@@ -1,6 +1,6 @@
 {
 	"name": "@wpcampus/wpcampus-iframe",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "The iframe React component used by the WPCampus organization.",
 	"main": "index.js",
 	"scripts": {
@@ -34,7 +34,7 @@
 	},
 	"peerDependencies": {
 		"react": "^16.11.0",
-    	"react-dom": "^16.11.0"
+		"react-dom": "^16.11.0"
 	},
 	"dependencies": {
 		"iframe-resizer": "^4.2.10",
