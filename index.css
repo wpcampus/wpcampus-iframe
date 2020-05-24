@@ -18,6 +18,7 @@
 	text-align: center;
 	opacity: 0;
 	transition: opacity 0.5s;
+	z-index: -1;
 }
 
 .wpc-iframe-wrapper__loading p {
@@ -27,6 +28,7 @@
 .wpc-iframe-wrapper .wpc-iframe {
 	display: block;
 	width: 100%;
+	z-index: 0;
 }
 
 .wpc-iframe-wrapper .wpc-iframe--resize {
