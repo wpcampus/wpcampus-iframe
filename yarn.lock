@@ -2116,10 +2116,10 @@ htmlparser2@^3.10.0:
     inherits "^2.0.1"
     readable-stream "^3.1.1"
 
-iframe-resizer@^4.2.10:
-  version "4.2.10"
-  resolved "https://registry.yarnpkg.com/iframe-resizer/-/iframe-resizer-4.2.10.tgz#c61c9119bb1bf31931fc3c3bb025e1891b18502c"
-  integrity sha512-9T/AWavGI5Q7nw2ch7qatkKvhK6S11eatuSh0SXpPXN3MV0HtN97KyifWJSuMj47rD6jbqe1CXT91PLQbexvEQ==
+iframe-resizer@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/iframe-resizer/-/iframe-resizer-4.3.1.tgz#7aca964ac02ba1fd2b8099b8ef30bc9a1f4f72ca"
+  integrity sha512-PkoTPNF6EYhTbDjogdKu7JVgKqRwwNBXMeywZaQyzEYM3BNltA8O9fIIrtUkmj+8VZGckXpwtXsWsaQ5lrhd0w==
 
 ignore@^5.1.4:
   version "5.1.6"
